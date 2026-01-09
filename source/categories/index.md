@@ -1,4 +1,5 @@
 ---
-title: categories
-date: 2026-01-07 11:33:20
+title: 分类
+date: 2026-01-07 00:00:00
+type: "categories"
 ---

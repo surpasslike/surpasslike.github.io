@@ -1,48 +1,91 @@
-name: 部署 Hexo 博客
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-on:
-  push:
-    branches:
-      - main
+# Site
+title: Surpasslike 的技术小站
+subtitle: Android 开发学习记录
+description: 记录 Android 开发、项目实践和学习日记
+keywords: Android, 开发, 学习笔记
+author: surpasslike
+language: zh-CN
+timezone: Asia/Shanghai
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# URL
+url: https://surpasslike.github.io
+permalink: :title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 拉取代码
-        uses: actions/checkout@v4
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - '.nojekyll'
 
-      - name: 安装 Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
-      - name: 安装依赖
-        run: |
-          npm install
-          npm install hexo-theme-butterfly
-          npm install hexo-renderer-pug hexo-renderer-stylus
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
-      - name: 构建网站
-        run: npx hexo generate
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-      - name: 上传构建产物
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
+# Metadata elements
+meta_generator: true
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: 部署到 GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# Extensions
+theme: butterfly
+
+# Deployment - 不再使用
+deploy:
+  type: ''
