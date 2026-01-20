@@ -194,11 +194,11 @@ index_post_content:
 toc:
   post: true
   page: false
-  number: true
+  number: false
   expand: false
   # Only for post
   style_simple: false
-  scroll_percent: true
+  scroll_percent: false
 
 post_copyright:
   enable: true
@@ -968,7 +968,7 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: flat
-  icons: true
+  icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
