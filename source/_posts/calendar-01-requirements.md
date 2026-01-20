@@ -31,33 +31,7 @@ Calendar 是一款以日历为核心的个人管理 Android 应用，整合了**
 ### 2.1 模块划分
 
 整个应用分为两个核心模块和一个共用层：
-
-```mermaid
-graph TB
-    subgraph "Calendar App"
-        subgraph A[事件模块]
-            A1[添加/编辑/删除事件]
-            A2[事件提醒]
-        end
-
-        subgraph B[习惯模块]
-            B1[添加/编辑/删除习惯]
-            B2[每日打卡]
-            B3[习惯提醒]
-        end
-
-        subgraph C[共用层]
-            C1[日历视图<br/>展示事件和习惯]
-            C2[通知系统<br/>统一管理提醒]
-        end
-    end
-
-    A --> C
-    B --> C
-    style A fill:#e1f5fe
-    style B fill:#e1f5fe
-    style C fill:#e8f5e8
-```
+![系统模块结构图](https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/02-system-module-structure-diagram.png)
 
 ### 2.2 功能清单
 
