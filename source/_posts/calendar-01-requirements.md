@@ -130,7 +130,7 @@ Calendar 是一款以日历为核心的个人管理 Android 应用，整合了**
 
 ---
 
-## 五、技术选型
+## 五、技术方案
 
 | 层级 | 技术方案 |
 |:-----|:---------|
@@ -141,6 +141,6 @@ Calendar 是一款以日历为核心的个人管理 Android 应用，整合了**
 <!-- | 异步 | Kotlin Coroutines + Flow | -->
 <!-- | 通知 | AlarmManager + NotificationManager | -->
 
-<!-- ## 下一篇 -->
+## 下一篇
 
-<!-- [Calendar 日历应用 - 系统架构设计](/calendar-02-architecture/) -->
+[Calendar 日历应用 - 系统架构设计](/calendar-02-architecture/)
