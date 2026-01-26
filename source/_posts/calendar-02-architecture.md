@@ -1,7 +1,7 @@
 ---
 title: Calendar 日历应用 - 系统架构设计
-date: 2026-01-21
-updated: 2026-01-21
+date: 2026-01-26
+updated: 2026-01-26
 categories:
   - 项目
 tags:
@@ -98,28 +98,11 @@ mermaid: true
 - Entity 定义数据表结构
 - HabitRecord（打卡记录）是 Habit（习惯）的附属数据
 <!-- endtab -->
-
-<!-- tab 通知模块 -->
-<!-- **职责**：处理定时提醒和通知推送
-
-| 组件 | 说明 |
-|:-----|:-----|
-| AlarmScheduler | 使用 AlarmManager 调度定时任务 |
-| NotificationHelper | 创建和发送系统通知 |
-| AlarmReceiver | BroadcastReceiver，接收闹钟触发并发送通知 |
-| BootReceiver | BroadcastReceiver，接收开机广播并重新注册闹钟 |
-
-**特点**：
-- 与 Repository 层协作，获取提醒时间
-- 支持事件提醒和习惯提醒
-- 处理通知权限请求
-- 开机后自动恢复所有提醒 -->
-<!-- endtab -->
 {% endtabs %}
 
 ---
 
-## 四、目录结构
+## 四、目录结构（根据代码实时更新）
 
 ```
 com/surpasslike/calendar/
