@@ -182,6 +182,7 @@ com/surpasslike/calendar/
 | Repository 单例 | 保证数据访问的一致性 |
 | LiveData数据容器 | 自动感知生命周期，只在页面可见时更新 |
 | 拆分 Repository | ScheduleRepository 和 HabitRepository 只负责各自领域，方便单独测试 |
+| 代码开发顺序 | Entity → Dao → Database → Repository → ViewModel → UI |
 
 ## 上一篇
 
