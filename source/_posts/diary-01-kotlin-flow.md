@@ -22,23 +22,23 @@ mermaid: true
 
 Flow 是响应式数据流：**数据库数据一变，UI 自动收到通知并刷新**，不需要手动操作。
 
-```mermaid
+{% mermaid %}
 graph LR
-    subgraph 传统做法
+    subgraph Traditional [传统做法]
         A1[用户切日期] --> B1[手动查数据库]
         B1 --> C1[手动刷新 UI]
         D1[别处新增日程] -.->|UI 不知道| C1
     end
-```
+{% endmermaid %}
 
-```mermaid
+{% mermaid %}
 graph LR
-    subgraph Flow 响应式
+    subgraph Reactive [Flow 响应式]
         A2[用户切日期] --> B2[自动查数据库]
         B2 --> C2[自动刷新 UI]
         D2[别处新增日程] -->|Room 自动通知| B2
     end
-```
+{% endmermaid %}
 
 ---
 
@@ -229,24 +229,22 @@ override fun onCalendarSelect(calendar: Calendar?, isClick: Boolean) {
 
 ## 六、完整数据流图
 
-```mermaid
+{% mermaid %}
 graph TB
     A["用户点击 2026年2月9日"] --> B["_selectedDate.value = 1770566400000L"]
-    B -->|"MutableStateFlow 发射"| C["flatMapLatest"]
-    C -->|"取消旧Flow, 创建新Flow"| D["Repository.observeSchedulesByDate()"]
+    B -->|MutableStateFlow 发射| C["flatMapLatest"]
+    C -->|取消旧Flow 创建新Flow| D["Repository.observeSchedulesByDate()"]
     D --> E["DAO.observeSchedulesByDate()"]
-E -->|"Room 执行SQL"| F["数据库发射符合粗筛条件的记录"]
-  F --> G[".map 精筛过滤"]
-  G -->|"flowOn Dispatchers.Default"| H["过滤后的日程列表"]
-  H --> I["schedulesForSelectedDate 发射"]
-  I -->|"collectWithViewLife"| J["mAdapter.submitList → UI 刷新"]
-
-    K["用户新增日程 D"] -->|"Room 检测到表变化"| E
-
+    E -->|Room 执行SQL| F["数据库发射符合粗筛条件的记录"]
+    F --> G[".map 精筛过滤"]
+    G -->|flowOn Default| H["过滤后的日程列表"]
+    H --> I["schedulesForSelectedDate 发射"]
+    I -->|collectWithViewLife| J["mAdapter.submitList - UI 刷新"]
+    K["用户新增日程"] -->|Room 检测到表变化| E
     style A fill:#4CAF50,color:#fff
     style J fill:#2196F3,color:#fff
     style K fill:#FF9800,color:#fff
-```
+{% endmermaid %}
 
 ---
 
