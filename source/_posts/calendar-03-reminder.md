@@ -42,7 +42,9 @@ mermaid: true
 
 ### 3.1 类图
 
-![提醒功能类图](https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/05-reminder.png)
+<a href="https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/05-reminder.png" target="_blank">
+  <img src="https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/05-reminder.png" alt="提醒功能类图">
+</a>
 
 ### 3.2 新增组件
 
@@ -105,7 +107,9 @@ mermaid: true
 
 ### 4.1 完整交互流程
 
-![提醒功能时序图](https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/06-reminder_sequence.png)
+<a href="https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/06-reminder_sequence.png" target="_blank">
+  <img src="https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/06-reminder_sequence.png" alt="提醒功能时序图">
+</a>
 
 ### 4.2 关键场景说明
 
