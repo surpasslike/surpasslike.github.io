@@ -28,7 +28,7 @@ mermaid: true
 
 ## 二、架构图
 
-![高层架构图](https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/03-high-level-architecture-diagram.png)
+![高层架构图](/img/posts/calendar/03-high-level-architecture-diagram.png)
 
 ---
 
@@ -144,7 +144,7 @@ com/surpasslike/calendar/
 
 ### 5.1 数据流向图
 
-<img src="https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/04-mvvm-data-stream.png" alt="数据流向图" width="40%">
+<img src="/img/posts/calendar/04-mvvm-data-stream.png" alt="数据流向图" width="40%">
 
 ### 5.2 数据流举例
 

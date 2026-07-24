@@ -57,7 +57,7 @@ Calendar 是一款以日历为核心的个人管理 Android 应用，专注于**
 
 ### 3.1 用例图
 
-![用例图](https://raw.githubusercontent.com/surpasslike/Calendar/main/docs/images/01-use-case.png)
+![用例图](/img/posts/calendar/01-use-case.png)
 
 ### 3.2 用例说明
 
