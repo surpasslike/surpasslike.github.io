@@ -2,6 +2,7 @@
 title: Windows 环境下通过 WSL 安装 Claude Code
 date: 2026-04-07
 updated: 2026-04-07
+description: 记录 Windows 通过 WSL Ubuntu 安装 Claude Code 的完整步骤，涵盖 WSL 初始化、Node.js 与 NVM 安装、Claude Code 安装和登录使用。
 categories:
   - 学习日记
 tags:
