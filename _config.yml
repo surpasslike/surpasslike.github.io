@@ -89,3 +89,10 @@ theme: butterfly
 # Deployment - 不再使用
 deploy:
   type: ''
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: false
+  categories: false
