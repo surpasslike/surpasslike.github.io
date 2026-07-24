@@ -21,18 +21,29 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
 
       - name: 安装依赖
-        run: |
-          npm install
-          npm install hexo-theme-butterfly
-          npm install hexo-renderer-pug hexo-renderer-stylus
+        run: npm ci
 
+      # Hexo 偶发 Render HTML failed 后仍以 0 退出并产出空页面，部署前必须拦截
       - name: 构建网站
-        run: npx hexo generate
+        run: |
+          set -euo pipefail
+          npm run build 2>&1 | tee build.log
+          if grep -E 'ERROR|Render HTML failed|Failed to @extend' build.log; then
+            echo '::error::构建日志包含错误，中止上传坏产物'
+            exit 1
+          fi
+          empty_html="$(find public -type f -name '*.html' -size 0 -print)"
+          if [ -n "$empty_html" ]; then
+            echo '::error::发现零字节 HTML，中止部署:'
+            printf '%s\n' "$empty_html"
+            exit 1
+          fi
 
       - name: 上传构建产物
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
