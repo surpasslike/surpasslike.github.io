@@ -2,6 +2,7 @@
 title: Kotlin 协程学习笔记 - 在 Calendar 项目中的实战使用
 date: 2026-02-14
 updated: 2026-02-14
+description: 结合 Calendar 项目讲解 Kotlin 协程的 suspend、viewModelScope、lifecycleScope、Dispatcher、取消机制及其在 Android 数据读写中的实践。
 categories:
   - 学习日记
 tags:
