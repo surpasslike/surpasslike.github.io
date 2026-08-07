@@ -4,7 +4,7 @@ date: 2026-01-20
 updated: 2026-01-26
 description: 介绍 Calendar Android 应用的产品定位、事件管理需求、用例关系、开发计划与 Room 等技术选型，为后续架构和功能实现建立需求基线。
 categories:
-  - 项目
+  - 项目-Calendar
 tags:
   - Android
   - Calendar
