@@ -1056,7 +1056,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    # 新版不蒜子使用不带 value 的节点 ID，这里先把 Butterfly 旧节点改成新版 ID
+    - <script data-pjax src="/js/busuanzi-v3-compat.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1085,7 +1086,7 @@ CDN:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
-    # busuanzi:
+    busuanzi: //cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # canvas_ribbon:
