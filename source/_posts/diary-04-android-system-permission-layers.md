@@ -4,17 +4,12 @@ date: 2026-08-07
 updated: 2026-08-07
 description: 从 Android Automotive 系统侧功能的实际问题出发，用一条访问链梳理 platform 签名、system UID、Priv-App、SELinux 与 DAC 的区别。
 categories:
-  - 学习日记
+  - 学习笔记
 tags:
-  - Android
   - Android Automotive
-  - 系统集成
-  - 平台签名
-  - Priv-App
-  - SELinux
-  - DAC
   - 权限
-series: Android Automotive 系统基础
+topic: automotive
+topic_order: 1
 mermaid: true
 ---
 

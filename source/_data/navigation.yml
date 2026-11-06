@@ -1,0 +1,41 @@
+categories:
+  - name: 项目实践
+    description: 记录需求、实现与问题排查中的具体做法。
+  - name: 学习笔记
+    description: 梳理概念、技术原理与可复用的开发经验。
+  - name: 工具指南
+    description: 整理开发工具的安装、配置与使用步骤。
+
+topics:
+  - id: calendar
+    title: Calendar 应用实践
+    description: 从需求与架构出发，结合协程、Flow 和通知提醒理解日历应用的实现。
+  - id: automotive
+    title: 车载 Android
+    description: 理解系统权限边界，结合车机投屏案例学习问题排查。
+  - id: compose
+    title: Compose 与界面状态
+    description: 梳理界面架构分工，以及异步加载、生命周期和状态恢复。
+  - id: tooling
+    title: 开发工具
+    description: 记录开发环境搭建与工具使用的具体步骤。
+
+tags:
+  - Android Automotive
+  - Jetpack Compose
+  - Kotlin
+  - Flow
+  - 协程
+  - 生命周期
+  - 架构设计
+  - MVVM
+  - 需求分析
+  - 通知提醒
+  - AlarmManager
+  - 权限
+  - 投屏
+  - 异步加载
+  - 故障排查
+  - Claude Code
+  - WSL
+  - 环境搭建

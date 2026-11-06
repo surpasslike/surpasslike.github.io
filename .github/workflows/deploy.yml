@@ -26,6 +26,9 @@ jobs:
       - name: 安装依赖
         run: npm ci
 
+      - name: 校验内容导航
+        run: npm test
+
       # Hexo 偶发 Render HTML failed 后仍以 0 退出并产出空页面，部署前必须拦截
       - name: 构建网站
         run: |

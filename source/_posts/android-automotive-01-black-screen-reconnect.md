@@ -3,15 +3,13 @@ title: 车机投屏项目 - 黑屏与重连问题排查
 date: 2026-08-07
 description: 结合几次真实的车机投屏排查，记录连接成功、首帧回调、纯黑画面、首帧超时和重连归因之间那些容易混淆的地方。
 categories:
-  - 项目-Android Automotive
+  - 项目实践
 tags:
-  - Android
-  - 车机
+  - Android Automotive
   - 投屏
-  - 日志诊断
-  - 首帧
-  - 重连
-series: 车机问题排查
+  - 故障排查
+topic: automotive
+topic_order: 2
 mermaid: true
 ---
 

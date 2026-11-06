@@ -4,16 +4,14 @@ date: 2026-08-10
 updated: 2026-08-10
 description: 从 XML 和 Fragment 过渡到 Compose，结合 UI 状态、单向数据流和 Android 平台能力，梳理 Route、ViewModel、Gateway、Screen 以及 UseCase 的职责边界。
 categories:
-  - 学习日记
+  - 学习笔记
 tags:
-  - Android
   - Jetpack Compose
   - Kotlin
   - 架构设计
   - MVVM
-  - 生命周期
-  - 单向数据流
-series: Compose 架构学习
+topic: compose
+topic_order: 1
 mermaid: true
 ---
 

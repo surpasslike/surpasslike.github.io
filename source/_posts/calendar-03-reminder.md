@@ -4,12 +4,12 @@ date: 2026-03-10
 updated: 2026-03-10
 description: 拆解 Calendar 日程提醒的完整实现，包括 AlarmManager 精确闹钟、通知权限、重复日程、开机恢复，以及类图和交互时序。
 categories:
-  - 项目-Calendar
+  - 项目实践
 tags:
-  - Android
-  - Calendar
   - 通知提醒
   - AlarmManager
+topic: calendar
+topic_order: 5
 series: Calendar日历应用
 mermaid: true
 ---

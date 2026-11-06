@@ -4,12 +4,14 @@ date: 2026-02-14
 updated: 2026-02-14
 description: 结合 Calendar 项目梳理 Kotlin Flow 从 Room DAO、Repository、ViewModel 到 UI 的完整数据流，重点解释 StateFlow、flatMapLatest 与生命周期收集。
 categories:
-  - 学习日记
+  - 学习笔记
 tags:
   - Kotlin
   - Flow
   - 协程
-  - Android
+  - 生命周期
+topic: calendar
+topic_order: 4
 mermaid: true
 ---
 

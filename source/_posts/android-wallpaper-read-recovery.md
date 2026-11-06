@@ -4,14 +4,14 @@ date: 2026-11-04
 updated: 2026-11-06
 description: 从桌面壁纸加载中的异常恢复出发，记录配置快照、图片读取、可见性重试和异步回调之间的职责边界。
 categories:
-  - Android 项目实践
+  - 项目实践
 tags:
-  - Android
   - Jetpack Compose
   - 生命周期
   - 异步加载
-  - 异常恢复
-series: Android 问题排查
+  - 故障排查
+topic: compose
+topic_order: 2
 ---
 
 最近整理桌面壁纸的加载逻辑时，我把一个容易被忽略的问题重新梳理了一遍：**壁纸暂时读不到之后，页面应该怎样恢复？**

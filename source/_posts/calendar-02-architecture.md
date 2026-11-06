@@ -4,12 +4,12 @@ date: 2026-01-26
 updated: 2026-03-10
 description: 以 Calendar 项目为例，说明 MVVM 与 Repository 分层、目录结构、Room 到 UI 的数据流，以及依赖倒置等关键架构设计。
 categories:
-  - 项目-Calendar
+  - 项目实践
 tags:
-  - Android
-  - Calendar
   - 架构设计
   - MVVM
+topic: calendar
+topic_order: 2
 series: Calendar日历应用
 mermaid: true
 ---

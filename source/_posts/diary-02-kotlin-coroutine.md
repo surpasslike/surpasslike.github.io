@@ -4,11 +4,13 @@ date: 2026-02-14
 updated: 2026-02-14
 description: 结合 Calendar 项目讲解 Kotlin 协程的 suspend、viewModelScope、lifecycleScope、Dispatcher、取消机制及其在 Android 数据读写中的实践。
 categories:
-  - 学习日记
+  - 学习笔记
 tags:
   - Kotlin
   - 协程
-  - Android
+  - 生命周期
+topic: calendar
+topic_order: 3
 mermaid: true
 ---
 
